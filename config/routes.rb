@@ -1,4 +1,7 @@
 Railsgirls::Application.routes.draw do
+  devise_for :users
+  resources :comments
+
   root :to => redirect('/ideas')
   resources :ideas
 
